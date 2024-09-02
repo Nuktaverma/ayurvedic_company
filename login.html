@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nayura - Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login to Nayura</h2>
+        <form id="login-form">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="mobile">Mobile Number:</label>
+            <input type="tel" id="mobile" name="mobile" required>
+
+            <label for="email">Email ID:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="abled">Abled/Disabled:</label>
+            <select id="abled" name="abled" required>
+                <option value="abled">Abled</option>
+                <option value="disabled">Disabled</option>
+            </select>
+
+            <label for="addiction">Addiction (if any):</label>
+            <input type="text" id="addiction" name="addiction">
+
+            <label for="treatment">Previous Treatment (if any):</label>
+            <input type="file" id="treatment" name="treatment">
+
+            <label for="allergies">Allergies (if any):</label>
+            <input type="text" id="allergies" name="allergies">
+
+            <label for="consultationType">Consultation Type:</label>
+            <select id="consultationType" name="consultationType" required>
+                <option value="online">Online</option>
+                <option value="offline">Offline</option>
+            </select>
+
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

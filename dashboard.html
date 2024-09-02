@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nayura - Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="shop.html">Shop</a>
+        <a href="subscription.html">Subscription</a>
+    </nav>
+
+    <section class="dashboard">
+        <h2>Welcome, <span id="userName"></span></h2>
+        <p>Please select your consultation mode:</p>
+
+        <a href="online-booking.html"><button id="onlineButton">Online Consultation</button></a>
+        <a href="find-clinic.html"><button id="offlineButton">Offline Consultation</button></a>
+    </section>
+
+    <script>
+        const userData = JSON.parse(localStorage.getItem('userData'));
+        if (userData) {
+            document.getElementById('userName').textContent = userData.fullName;
+        }
+
+        document.getElementById('onlineButton').addEventListener('click', function() {
+            // Redirect to online consultation page
+            window.location.href = 'online-consultation.html';
+        });
+
+        document.getElementById('offlineButton').addEventListener('click', function() {
+            // Redirect to offline consultation page
+            window.location.href = 'offline-consultation.html';
+        });
+    </script>
+</body>
+</html>

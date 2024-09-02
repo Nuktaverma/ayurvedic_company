@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inayro Consultation</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .header {
+            background-color: #4CAF50;
+            padding: 30px;
+            text-align: center;
+            color: white;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        .header p {
+            margin: 10px 0 0;
+            font-size: 18px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+        .consultation-option {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            margin-bottom: 40px;
+        }
+        .consultation-option h2 {
+            color: #4CAF50;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        .consultation-option p {
+            font-size: 16px;
+            color: #777;
+            line-height: 1.6;
+        }
+        .consultation-option button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+        .consultation-option button:hover {
+            background-color: #45a049;
+        }
+        .online-section {
+            background-image: url('/path/to/your/online_consultation_image.jpg'); /* Replace with actual path */
+            background-size: cover;
+            background-position: center;
+            padding: 50px;
+            border-radius: 8px;
+        }
+        .offline-section {
+            background-image: url('/path/to/your/offline_consultation_image.jpg'); /* Replace with actual path */
+            background-size: cover;
+            background-position: center;
+            padding: 50px;
+            border-radius: 8px;
+        }
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 50px;
+            border-radius: 8px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Consult with Inayro</h1>
+        <p>Choose your preferred consultation method</p>
+    </div>
+    <a href="online-booking.html">
+        <button>Book Online Consultation</button>
+    </a>
+    
+    <a href="find-clinic.html">
+        <button>Find a Nearby Clinic</button>
+    </a>
+    
+
+    <div class="container">
+        <!-- Online Consultation Section -->
+        <div class="consultation-option online-section">
+            <div class="overlay">
+                <h2>Online Consultation</h2>
+                <p>
+                    Our online consultation service allows you to connect with our expert Ayurvedic practitioners from the comfort of your home. Schedule an appointment at a time that suits you, and receive personalized advice through a video call.
+                </p>
+                <button>Book Online Consultation</button>
+            </div>
+        </div>
+
+        <!-- Offline Consultation Section -->
+        <div class="consultation-option offline-section">
+            <div class="overlay">
+                <h2>Offline Consultation</h2>
+                <p>
+                    Visit one of our partner clinics or Ayurvedic centers to receive in-person consultation. Our practitioners will provide a detailed health assessment and recommend treatments tailored to your needs.
+                </p>
+                <button>Find a Nearby Clinic</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
